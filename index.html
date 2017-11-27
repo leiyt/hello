@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<title>hello</title>
+ <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
+ <style>
+.section { text-align: center; font: 30px "Microsoft Yahei"; color: #fff;}
+</style>
+</head>
+
+<body>
+<div id="hello">
+    <div class="section">
+        <h1>第一屏</h1>
+    </div>
+    <div class="section">
+        <h1>第二屏</h1>
+    </div>
+    <div class="section">
+        <h1>第三屏</h1>
+    </div>
+    <div class="section">
+        <h1>第四屏</h1>
+    </div>
+    <div class="section">
+        <h1>第五屏</h1>
+    </div>
+    <div class="section">
+        <h1>第六屏</h1>
+    </div>
+</div>
+
+<script src="lib//jquery.min.js"></script>
+<script src="lib/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+    $('#hello').fullpage({
+        sectionsColor : ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90', '#abc', '#000']
+    });
+
+    $(window).resize(function(){
+        autoScrolling();
+    });
+
+    function autoScrolling(){
+        var $ww = $(window).width();
+        if($ww < 1024){
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
+
+    autoScrolling();
+});
+</script>
+</body>
+</html>
