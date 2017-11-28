@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.section {
+    text-align: center;
+    font: 30px "Microsoft Yahei";
+    color: #fff;
+}
+.section .img-box{
+	display: block;
+	width: 300px;
+	padding-top: 300px;
+	border: 1px solid #000;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}

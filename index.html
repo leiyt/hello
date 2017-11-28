@@ -4,16 +4,19 @@
 <head>
  <meta charset="UTF-8">
 <title>hello</title>
- <link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
+ <link rel="stylesheet" href="css/jquery.fullPage.css">
+ <link rel="stylesheet" href="css/hello.css">
  <style>
-.section { text-align: center; font: 30px "Microsoft Yahei"; color: #fff;}
+
 </style>
 </head>
 
 <body>
 <div id="hello">
     <div class="section">
-        <h1>第一屏</h1>
+        <div class="img-box">
+            <img src="" alt="">
+        </div>
     </div>
     <div class="section">
         <h1>第二屏</h1>
@@ -37,7 +40,7 @@
 <script>
 $(function(){
     $('#hello').fullpage({
-        sectionsColor : ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90', '#abc', '#000']
+        sectionsColor : ['#2A8C9A', '#2A8C9A', '#1bbc9b', '#4BBFC3', '#7BAABE', '#8ED3DA']
     });
 
     $(window).resize(function(){
